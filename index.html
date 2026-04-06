@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Банка тёплых записок</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-blur blur-3"></div>
+
+  <main class="page">
+    <section class="hero-card">
+      <p class="eyebrow">маленький сайт для тепла</p>
+      <h1>Банка тёплых записок</h1>
+      <p class="subtitle">
+        Иногда не нужны большие слова. Иногда нужно просто чуть больше света,
+        тепла и бережности.
+      </p>
+
+      <div class="jar-zone">
+        <div class="sparkles" id="sparkles"></div>
+
+        <div class="jar-wrap">
+          <div class="jar-lid"></div>
+          <div class="jar">
+            <div class="jar-glow"></div>
+            <div class="jar-shine"></div>
+            <div class="notes-inside" id="notesInside">
+              <span class="mini-note note-a"></span>
+              <span class="mini-note note-b"></span>
+              <span class="mini-note note-c"></span>
+              <span class="mini-note note-d"></span>
+              <span class="mini-note note-e"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="pullNoteBtn" class="primary-btn">Достать записку</button>
+          <button id="shakeBtn" class="secondary-btn">Потрясти баночку</button>
+        </div>
+
+        <div class="counter" id="counter">Открыто записок: 0 / 12</div>
+      </div>
+    </section>
+
+    <section class="note-card hidden" id="noteCard">
+      <div class="note-ribbon"></div>
+      <p class="note-label">тёплая записка</p>
+      <p class="note-text" id="noteText"></p>
+    </section>
+
+    <section class="bottom-row">
+      <div class="mini-card">
+        <h2>Зачем это</h2>
+        <p>
+          Чтобы напомнить: рядом с тобой есть человек, который не хочет делать тебе тяжелее,
+          а хочет дать тебе немного покоя, тепла и опоры. И вообще то я тебя люблю! 
+        </p>
+      </div>
+
+      <div class="mini-card final-card hidden" id="finalCard">
+        <h2>Когда все записки открыты</h2>
+        <p>
+          Даже если день был тяжёлым, это не отменяет того, какая ты ценная,
+          нежная и важная.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
